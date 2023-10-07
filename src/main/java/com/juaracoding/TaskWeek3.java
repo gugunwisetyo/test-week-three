@@ -14,7 +14,7 @@ public class TaskWeek3 {
         System.out.println("Open URL");
         delay(1);
         //login
-        String warning = driver.findElement(By.xpath("//*[@id=\"mat-dialog-0\"]/app-welcome-banner/div/h1/span")).getText();
+//        String warning = driver.findElement(By.xpath("//*[@id=\"mat-dialog-0\"]/app-welcome-banner/div/h1/span")).getText();
         driver.findElement(By.xpath("//*[@id=\"mat-dialog-0\"]/app-welcome-banner/div/div[2]/button[2]")).click();
         delay(1);
         driver.findElement(By.id("email")).sendKeys("gugunwisetyo@gmail.com");
