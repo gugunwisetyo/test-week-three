@@ -3,6 +3,7 @@ package com.juaracoding;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class FirstSelenium {
@@ -14,8 +15,11 @@ public class FirstSelenium {
         System.out.println("Open URL");
 
         //locator search input
-        driver.findElement(By.name("q")).sendKeys("Wikipedia");
-        driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
+        //driver.findElement(By.name("q")).sendKeys("Wikipedia");
+        //driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
+        WebElement inputSearch = driver.findElement(By.name("q"));
+        inputSearch.sendKeys("Wikipedia");
+        inputSearch.sendKeys(Keys.ENTER);
 
         //cara klik tombol: keys, ESC, locator name = btnK lalu panggil method click
 
